@@ -19,7 +19,7 @@ app.use("/auth", router)
 app.use("/user", user)
 app.use(errorMiddleware)
 
-const port = 9080
+const port = 9090
 
 connect(URL).then(data => {
   app.listen(port, () => {

@@ -6,7 +6,7 @@ const path = require("path")
 
 const fileUpload=(req,res,next)=>{
 console.log(req.headers.pin,req.params);
-  let fileUploads = (`https://login-system-with-mongo-adityadixit12.julyseptoct-node.repl.co/${req.files.file.path.split("uploads/")[1]}`);
+  let fileUploads = (`https://file-upload-system-99yq.onrender.com/${req.files.file.path.split("uploads/")[1]}`);
   
     UserFileData(req.params.id,req.headers.pin,fileUploads).then(data=>{
       res.json({
